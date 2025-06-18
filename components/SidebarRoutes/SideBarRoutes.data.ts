@@ -1,122 +1,71 @@
-import { CalendarClock, CalendarPlus,  ClipboardEdit, FileEdit, FilePlus, FileText, LucideArrowLeftRight,  PenBoxIcon,UserPlus2, UserRoundPenIcon, UserRoundPlusIcon, UserX2Icon } from "lucide-react";
+import { CalendarPlus, ClipboardEdit, FileEdit, FilePlus, FileText, LucideArrowLeftRight, UserPlus2, UserRoundPenIcon, UserRoundPlusIcon, UserX2Icon } from "lucide-react";
 
-export const DataEstudiantesSidebar = [
+export const DataUsuarioSiderBar = [
     {
         icon: UserRoundPlusIcon,
-        label: "Registrar",
-        href:"/dashboard/students", 
+        label: "Nuevo Usuario",
+        href: "/dashboard/Usuario/nuevo-usuario",
     },
     {
         icon: UserRoundPenIcon,
-        label: "Inscribir",
-        href:"/dashboard/inscripcion-students", 
+        label: "Gestionar Usuario",
+        href: "/dashboard/Usuario/gestionar-usuario",
     },
+];
 
+export const DataCategoriaSiderBar = [
     {
-        icon: UserX2Icon,
-        label: "Retirar",
-        href:"/dashboard/retirar-students", 
+        icon: FilePlus,
+        label: "Nueva categoria",
+        href: "/dashboard/Categoria/nueva-categoria",
     },
-
-    {
-        icon: LucideArrowLeftRight,
-        label: "Cambio De Sección",
-        href:"/dashboard/cambio-seccion", 
-    },
-    
-    {
-        icon: FileText,
-        label: "Generar Constancias",
-        href: "/dashboard/create-constancia-student", 
-    },
-
-]
-
-export const DataDocenteSidebar = [
-    {
-        icon: UserPlus2,
-        label: "Registrar",
-        href: "/dashboard/registrar-docente", 
-    },
-    {
-        icon: PenBoxIcon,
-        label: "Asignar Materias",
-        href: "/dashboard/asignar-materias", 
-    },
-]
-export const DataSeccionesSidebar = [
     {
         icon: ClipboardEdit,
-        label: "Aperturar Sección",
-        href: "/dashboard/create-update-seccion", 
+        label: "Gestionar categoria",
+        href: "/dashboard/Categoria/gestionar-categoria",
+    },
+];
+
+export const DataProductosSiderBar = [
+    {
+        icon: FilePlus,
+        label: "Nuevo Productos",
+        href: "/dashboard/Productos/nuevo-productos",
     },
     {
-        icon: FileText,
-        label: "Generar Nómina",
-        href: "/dashboard/nomina-secciones", 
+        icon: FileEdit,
+        label: "Gestionar Productos",
+        href: "/dashboard/Productos/gestionar-productos",
     },
-]
-
-
-export const DataMateriasSidebar = [
-    {
-        icon: ClipboardEdit,
-        label: "Registrar",
-        href: "/dashboard/materias", 
-    },
-]
-
-export const DataAñoSidebar = [
     {
         icon: CalendarPlus,
-        label: "Periodos Escolares",
-        href: "/dashboard/periodos-escolares", 
+        label: "ACTUALIZAR STOCK",
+        href: "/dashboard/Productos/actualizar-stock",
     },
-    {
-        icon: CalendarClock,
-        label: "Lapsos",
-        href: "/dashboard/periodos-escolares/lapsos", 
-    },
+];
 
-    
-]
+export const DataClientesSiderBar = [
+    {
+        icon: UserPlus2,
+        label: "Nuevo Cliente",
+        href: "/dashboard/Clientes/nuevo-cliente",
+    },
+    {
+        icon: UserX2Icon,
+        label: "Gestionar Cliente",
+        href: "/dashboard/Clientes/gestionar-cliente",
+    },
+];
 
-export const DataIngresarNotas = [
-    {
-        icon: FileEdit,
-        label: "Cargar Notas",
-        href: "/dashboard/asignar-notas", 
-    },
-    {
-        icon: FileEdit,
-        label: "Modificar Notas",
-        href: "/dashboard/cambiar-notas", 
-    },
+export const DataFacturarSiderBar = [
     {
         icon: FileText,
-        label: "Ver Notas",
-        href: "/dashboard/ver-notas", 
-    }
-]
-
-export const DataNotasSidebar = [
-    {
-        icon: FilePlus,
-        label: "Generar Planilla",
-        href: "/dashboard/notas",
-    },
-    
-]
-
-export const DataEvaluacionesSidebar = [
-    {
-        icon: FilePlus,
-        label: "Cargar Evaluaciones",
-        href: "/dashboard/cargar-evaluaciones", 
+        label: "Nueva Venta",
+        href: "/dashboard/Facturar/nueva-venta",
     },
     {
-        icon: FileEdit,
-        label: "Ver Mis Evaluaciones",
-        href: "/dashboard/ver-evaluaciones",
-    }
-]
+        icon: LucideArrowLeftRight,
+        label: "Gestionar Ventas",
+        href: "/dashboard/Facturar/gestionar-ventas",
+    },
+];

@@ -1,5 +1,5 @@
-import { SidebarRoutes } from "../SidebarRoutes/SidebarRoutes";
 import React from "react";
+import { SidebarRoutes } from "../SidebarRoutes/SidebarRoutes";
 
 export default function Sidebar() {
   return (
